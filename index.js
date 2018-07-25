@@ -12,7 +12,7 @@ return driver;
 }
 
 function deleteFromDriverByKey(driver, key){
-  var newDriver = driver;
+  var newDriver = {...driver};
   delete newDriver[key];
   return newDriver;
 }
